@@ -11,8 +11,6 @@ class AdvertisementViewSet(ModelViewSet):
     queryset = Advertisement.objects.all()
     serializer_class = AdvertisementSerializer
     permission_classes = [IsOwnerOrReadOnly]
-    # TODO: настройте ViewSet, укажите атрибуты для кверисета,
-    #   сериализаторов и фильтров
 
     def get_permissions(self):
         """Получение прав для действий."""
